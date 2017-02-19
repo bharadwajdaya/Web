@@ -1,0 +1,32 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript" src="javascript.js"></script>
+		<title>MemeMaker-Simple</title>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js">
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+  <div>
+    <input type="file" onchange="handleFileSelect(this)" id="file" />
+  </div>
+  <div id="image-container">
+    <canvas width="500" height="500"></canvas>
+    <div>
+      <span>Top Line:</span>
+      <br/>
+      <input id="topLineText" oninput="textChangeListener" type="text">
+      <br/>
+      <span>Bottom Line:</span>
+      <br/>
+      <input id="bottomLineText" type="text">
+      <br/>
+      <button id="saveBtn" onclick="saveFile()">Save</button>
+    </div>
+  </div>
+</body>
+</html>
